@@ -1,0 +1,22 @@
+Êþº¾   4 e  (Hruthvik_Java8/Epam_assignment/Listaverage  java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this *LHruthvik_Java8/Epam_assignment/Listaverage; main ([Ljava/lang/String;)V  java/util/Scanner	    java/lang/System   in Ljava/io/InputStream;
+     (Ljava/io/InputStream;)V	     out Ljava/io/PrintStream;   Enter size of the List:
+ " $ # java/io/PrintStream % & println (Ljava/lang/String;)V
+  ( ) * nextInt ()I , Enter the elements:
+  . / 0 
+getAverage ([I)D 2 java/lang/StringBuilder 4 Average of list is:
+ 1 6  &
+ 1 8 9 : append (D)Ljava/lang/StringBuilder;
+ 1 < = > toString ()Ljava/lang/String;
+  @ A  close args [Ljava/lang/String; sc Ljava/util/Scanner; n I numArray [I i average D StackMapTable C I
+ Q S R java/util/Arrays T U stream  ([I)Ljava/util/stream/IntStream; W Y X java/util/stream/IntStream K Z ()Ljava/util/OptionalDouble;
+ \ ^ ] java/util/OptionalDouble _ ` getAsDouble ()D 	numStream Ljava/util/stream/IntStream; 
+SourceFile Listaverage.java !               /     *· ±    
+                    	            ]» Y² · L² ¶ !+¶ '=² +¶ !¼
+N6§ -+¶ 'O„¡ÿò-¸ -9² » 1Y3· 5¶ 7¶ ;¶ !+¶ ?±    
+   2      	  
+      $  *  2  ;  A  X  \     >    ] B C    R D E   E F G  $ 9 H I  '  J G  A  K L  M    ÿ *  N  O  
+ 	 / 0     G     *¸ PL+¹ V ¶ [¯    
+   
+               H I    
+ a b   c    d

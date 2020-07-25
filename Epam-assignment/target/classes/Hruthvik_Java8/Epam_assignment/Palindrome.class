@@ -1,0 +1,27 @@
+ ˛∫æ   4 ù  'Hruthvik_Java8/Epam_assignment/Palindrome  java/lang/Object <init> ()V Code
+  	   LineNumberTable LocalVariableTable this )LHruthvik_Java8/Epam_assignment/Palindrome; main ([Ljava/lang/String;)V  java/util/ArrayList
+  	  java/util/Scanner	    java/lang/System   in Ljava/io/InputStream;
+     (Ljava/io/InputStream;)V	     ! out Ljava/io/PrintStream; # Enter no. of Strings : 
+ % ' & java/io/PrintStream ( ) println (Ljava/lang/String;)V
+  + , - nextInt ()I
+  / 0 1 next ()Ljava/lang/String;
+  3 4 5 add (Ljava/lang/Object;)Z
+  7 8 9 palindromeList "(Ljava/util/List;)Ljava/util/List; ; java/lang/StringBuilder =  The list containing palindromes:
+ : ?  )
+ : A B C append -(Ljava/lang/Object;)Ljava/lang/StringBuilder;
+ : E F 1 toString
+  H I  close args [Ljava/lang/String; n I arr Ljava/util/ArrayList; sc Ljava/util/Scanner; i result Ljava/util/List; LocalVariableTypeTable )Ljava/util/ArrayList<Ljava/lang/String;>; $Ljava/util/List<Ljava/lang/String;>; StackMapTable K 	Signature J(Ljava/util/List<Ljava/lang/String;>;)Ljava/util/List<Ljava/lang/String;>; ] _ ^ java/util/List ` a stream ()Ljava/util/stream/Stream;   c d e test  ()Ljava/util/function/Predicate; g i h java/util/stream/Stream j k filter 9(Ljava/util/function/Predicate;)Ljava/util/stream/Stream;
+ m o n java/util/stream/Collectors p q toList ()Ljava/util/stream/Collector; g s t u collect 0(Ljava/util/stream/Collector;)Ljava/lang/Object; res lambda$0 (Ljava/lang/String;)Z z java/lang/StringBuffer
+ y ?
+ y } ~  reverse ()Ljava/lang/StringBuffer;
+ y E
+ Ç Ñ É java/lang/String Ö 5 equals ele Ljava/lang/String; 
+SourceFile Palindrome.java BootstrapMethods
+ å é ç "java/lang/invoke/LambdaMetafactory è ê metafactory Ã(Ljava/lang/invoke/MethodHandles$Lookup;Ljava/lang/String;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodType;Ljava/lang/invoke/MethodHandle;Ljava/lang/invoke/MethodType;)Ljava/lang/invoke/CallSite; ã 5
+  î w x ì x InnerClasses ô %java/lang/invoke/MethodHandles$Lookup õ java/lang/invoke/MethodHandles Lookup !               /     *∑ ±    
+                    	           Zª Y∑ Mª Y≤ ∑ N≤ "∂ $-∂ *<6ß ,-∂ .∂ 2WÑ°ˇÒ,∏ 6:≤ ª :Y<∑ >∂ @∂ D∂ $-∂ G±    
+   .    	          &  /  8  >  U  Y     >    Z J K     : L M   R N O   G P Q  #  R M  >  S T  U      R N V  >  S W  X    ˇ &  Y      8 9  Z    [    ~     &ª Y∑ L*π \ ∫ b  π f ∏ lπ r ¿ L+∞    
+          $         & N T     v O  U       & N W     v V 
+ w x     =     *ª yY*∑ {∂ |∂ Ä∂ Å¨    
+                Ü á    à    â ä     ë  í ï ñ ó   
+  ò ö ú 
